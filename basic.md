@@ -16,9 +16,11 @@
    git config --global user.name "Your Name"
    git config --global user.email "your.email@example.com"
    ```
+> **Note**: Use the same email address for Git that you use for GitHub.
 
 ## Basic Git Commands
 
+> Use this commands on your project folder in the terminal.
 1. **Initialize a Repository**:
    ```sh
    git init
@@ -40,6 +42,29 @@
    git commit -m "Commit message"
    ```
 
+## Pushing to GitHub
+
+1. **Add Remote**:
+   ```sh
+   git remote add origin https://github.com/username/repository.git
+   ```
+2. **Push to Remote Repository**:
+   ```sh
+   git push -u origin main
+   ```
+   > **Note**: If your branch name is `master`, rename it to `main` before pushing:
+   ```sh
+   git branch -M main
+   ```
+
+   > after you complete this for first time, you can use `git push` to push your changes to the remote repository.
+
+3. **Push a Branch**:
+   ```sh
+   git push origin branch-name
+   ```
+> Use this if you want to push a branch other than `main`.
+   
 ## Branching
 
 1. **Create a New Branch**:
@@ -57,26 +82,6 @@
 4. **List Branches**:
    ```sh
    git branch
-   ```
-
-## Pushing to GitHub
-
-1. **Add Remote**:
-   ```sh
-   git remote add origin https://github.com/username/repository.git
-   ```
-2. **Push to Remote Repository**:
-   ```sh
-   git push -u origin main
-   ```
-   > **Note**: If your branch name is `master`, rename it to `main` before pushing:
-   ```sh
-   git branch -M main
-   ```
-
-3. **Push a Branch**:
-   ```sh
-   git push origin branch-name
    ```
 
 ## Merging Branches
