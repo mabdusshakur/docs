@@ -69,6 +69,11 @@
    ```sh
    git push -u origin main
    ```
+   > **Note**: If your branch name is `master`, rename it to `main` before pushing:
+   ```sh
+   git branch -M main
+   ```
+
 3. **Push a Branch**:
    ```sh
    git push origin branch-name
